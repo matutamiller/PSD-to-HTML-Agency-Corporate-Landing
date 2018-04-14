@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"html, body {\n\tmargin: 0;\n\tpadding: 0;\n\theight: 100%;\n\tmin-height: 100%;\n\tfont-family: \"Exo\";\n\tdisplay: block;\n}\n\n* {\n\tbox-sizing: border-box;\n\tmargin: 0;\n\tpadding: 0;\n  }\n  \n  section {\n\t  position: relative;\n\t  display: block;\n  }\n  \n  a {\n\t  text-decoration: none;\n  }\n  \n  .flex {\n\t  display: flex;\n\t  flex-wrap: wrap;\n  }\n  .content-wr {\n\t  position: relative;\n\t  max-width: 1200px;\n\t  margin: 0 auto;\n  }\n\n\n"
+	],
+	"mappings": ";AAAA,AAAA,IAAI,EAAE,AAAA,IAAI,CAAC;EACV,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;EACX,MAAM,EAAE,IAAK;EACb,UAAU,EAAE,IAAK;EACjB,WAAW,EAAE,KAAM;EACnB,OAAO,EAAE,KAAM;CACf;;;AAED,AAAA,CAAC,CAAC;EACD,UAAU,EAAE,UAAW;EACvB,MAAM,EAAE,CAAE;EACV,OAAO,EAAE,CAAE;CACT;;;AAED,AAAA,OAAO,CAAC;EACP,QAAQ,EAAE,QAAS;EACnB,OAAO,EAAE,KAAM;CACf;;;AAED,AAAA,CAAC,CAAC;EACD,eAAe,EAAE,IAAK;CACtB;;;AAED,AAAA,KAAK,CAAC;EACL,OAAO,EAAE,IAAK;EACd,SAAS,EAAE,IAAK;CAChB;;;AACD,AAAA,WAAW,CAAC;EACX,QAAQ,EAAE,QAAS;EACnB,SAAS,EAAE,MAAO;EAClB,MAAM,EAAE,MAAO;CACf",
+	"names": []
+}

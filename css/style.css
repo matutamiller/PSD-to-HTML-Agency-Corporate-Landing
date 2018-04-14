@@ -1,0 +1,225 @@
+/* ---------------------------------------------- /*
+ * Common settings
+/* ---------------------------------------------- */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  display: block;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  position: relative;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-wr {
+  position: relative;
+  max-width: 75em;
+  margin: 0 auto;
+  padding: 0 0.9375em;
+  overflow: hidden;
+}
+
+/* ---------------------------------------------- /*
+ * Header
+/* ---------------------------------------------- */
+header {
+  position: absolute;
+  background: #eff0f1;
+  padding: 3.9375em 0 1em;
+  width: 100%;
+  top: 0;
+  transition: box-shadow 0.5s ease;
+  z-index: 100;
+}
+
+header .content-wr {
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.sticky {
+  padding-top: 1em;
+  position: fixed;
+  box-shadow: 0 -32px 32px 31px #5E5E5E;
+}
+
+#menu_button {
+  float: right;
+  width: 1.875em;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.menu_button_bars {
+  border-radius: 0.175em;
+  background: #606060;
+  height: 0.25em;
+  width: 100%;
+  margin-bottom: 0.3125em;
+  transform-origin: center center;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#menu_button.active .menu_button_bars:nth-child(1) {
+  -webkit-transform: translateY(0.5625em) rotate(-45deg);
+  transform: translateY(0.5625em) rotate(-45deg);
+}
+
+#menu_button.active .menu_button_bars:nth-child(2) {
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+#menu_button.active .menu_button_bars:nth-child(3) {
+  -webkit-transform: translateY(-0.5625em) rotate(45deg);
+  transform: translateY(-0.5625em) rotate(45deg);
+}
+
+/* ---------------------------------------------- /*
+ * Nav
+/* ---------------------------------------------- */
+nav {
+  margin-top: 1em;
+  position: relative;
+  transform-origin: right top;
+  width: 0;
+  overflow: hidden;
+  height: 3em;
+  transition: width 0.5s ease;
+}
+
+nav.active {
+  display: block;
+  width: 40em;
+}
+
+nav div {
+  font-family: Montserrat, sans-serif;
+  width: 40em;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+nav div a {
+  margin-right: 1em;
+  text-decoration: none;
+  color: #606060;
+  display: block;
+  height: 100%;
+}
+
+nav div a:hover {
+  color: #000000;
+  text-shadow: #000000 0 0px 5px;
+}
+
+@media (max-width: 850px) {
+  nav {
+    transition: height 0.5s ease;
+  }
+  nav.active {
+    width: 8em;
+    height: 18em;
+    overflow: hidden;
+  }
+  nav div {
+    flex-direction: column;
+    margin-top: 3em;
+  }
+  nav div a {
+    margin: 1em 0;
+  }
+}
+
+/* ---------------------------------------------- /*
+ * Top section
+/* ---------------------------------------------- */
+#head_section {
+  min-height: 100vh;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: #eff0f2;
+  box-sizing: border-box;
+  padding-top: 11.9375em;
+  text-align: center;
+}
+
+#head_section h1 {
+  font-size: 2.8125em;
+  letter-spacing: 2px;
+  font-kerning: normal;
+  text-shadow: 0 9px 10px rgba(0, 0, 0, 0.24);
+  color: #505050;
+  margin: 0 0 0.4em;
+}
+
+#head_section h1 mark {
+  background: #b2f2ee;
+  color: #505050;
+  display: inline-block;
+  padding: 0 0.2em;
+}
+
+#head_section button {
+  border: solid #777879 0.11111111em;
+  -webkit-border-radius: 0.11111111em;
+  -moz-border-radius: 0.11111111em;
+  border-radius: 0.11111111em;
+  color: #777879;
+  background: transparent;
+  font-size: 1.125em;
+  text-transform: uppercase;
+  font-family: inherit;
+  letter-spacing: 0.1em;
+  height: 2.95em;
+  width: 12.89em;
+  margin-top: 7em;
+  margin-bottom: 2em;
+}
+
+#head_section button:focus {
+  outline: none;
+}
+
+#head_section img {
+  position: absolute;
+  right: 6em;
+  bottom: 0;
+}
+
+@media only screen and (max-width: 812px) {
+  #head_section img {
+    display: none;
+  }
+  #head_section h1 {
+    font-size: 1.8em;
+    letter-spacing: 1px;
+  }
+}
