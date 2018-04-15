@@ -11,7 +11,6 @@ html, body {
 
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
 }
 
@@ -34,6 +33,51 @@ a {
   max-width: 75em;
   margin: 0 auto;
   padding: 0 0.9375em;
+  overflow: hidden;
+}
+
+h2 {
+  line-height: 80%;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: 2.375em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h2 small {
+  margin-top: 0.5em;
+  display: block;
+  text-transform: uppercase;
+  font-family: Merriweather, serif;
+  font-size: 0.437em;
+  color: #5e5f5f;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+h4 {
+  font-family: Merriweather, serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.0625em;
+}
+
+p {
+  font-family: Raleway, sans-serif;
+  line-height: 1.75em;
+}
+
+section:not(#head_section) {
+  padding-top: 3.395em;
+  padding-bottom: 5em;
   overflow: hidden;
 }
 
@@ -221,5 +265,103 @@ nav div a:hover {
   #head_section h1 {
     font-size: 1.8em;
     letter-spacing: 1px;
+  }
+}
+
+/* ---------------------------------------------- /*
+ * About Us Section
+/* ---------------------------------------------- */
+#aboutUs {
+  background: #f8fafa;
+  min-height: 100vh;
+}
+
+#aboutUs .flex {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#aboutUs .flex .slider {
+  position: relative;
+  padding: 2.5em 2.5em 0;
+  max-width: 32.5em;
+  box-sizing: border-box;
+}
+
+#aboutUs .flex .slider .sliderBg {
+  position: absolute;
+  height: 65%;
+  width: 100%;
+  background-color: #eff0f2;
+  margin-top: 13%;
+  margin-left: -2.5em;
+}
+
+#aboutUs .flex .slider ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+
+#aboutUs .flex .slider .sliderItems {
+  max-width: 26em;
+  margin: 0 auto;
+}
+
+#aboutUs .flex .slider .sliderItems:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#aboutUs .flex .slider .sliderItems img {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+#aboutUs .flex .slider .sliderItems li {
+  opacity: 0;
+  transition: opacity 0.4s;
+  width: 100%;
+  margin-right: -100%;
+  float: left;
+}
+
+#aboutUs .flex .slider .sliderItems li.active {
+  opacity: 1;
+}
+
+#aboutUs .flex .slider .sliderNav li {
+  transition: opacity 0.4s;
+  display: inline-block;
+  margin: 0 0.09375em;
+  width: 0.625em;
+  height: 0.625em;
+  background: #d0d0d0;
+  border-radius: 0.125em;
+}
+
+#aboutUs .flex .slider .sliderNav li.active {
+  background: #71f6eb;
+}
+
+#aboutUs .flex .aboutStory {
+  padding: 2.5em 2.5em 0;
+  max-width: 32.5em;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 760px) {
+  #aboutUs .flex {
+    flex-wrap: nowrap;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .slider, .aboutStory {
+    min-width: 100%;
+    margin: 0 auto;
   }
 }

@@ -30,3 +30,32 @@
     };
     window.addEventListener('scroll',headerSticky,true);
 })();
+
+
+//Slider
+(function () {
+
+    var elem = document.createElement('li');
+    elem.innerHTML = '';
+    var sliders = [];
+    [].forEach.call(document.getElementsByClassName('slider'),function (item) {
+        sliders.push(item);
+    });
+    sliders.forEach(function (item) {
+        var count = item.getElementsByClassName('sliderItems')[0].getElementsByTagName('li').length;
+        for(var i = 1; i <= count; i++){
+            var newElem = elem.cloneNode(true);
+            newElem.setAttribute('index', i + '');
+            newElem.onclick = function () {
+                var index = this.getAttribute('index');
+                document.querySelector('.sliderItems .active').removeAttribute('class');
+                document.querySelector('.sliderItems li:nth-child('+index+')').className = 'active';
+                document.querySelector('.sliderNav .active').removeAttribute('class');
+                this.className = 'active';
+            };
+            item.getElementsByClassName('sliderNav')[0].appendChild(newElem);
+        }
+        document.querySelector('.sliderNav li').className = 'active';
+
+    })
+})();
