@@ -370,3 +370,74 @@ nav {
 		margin: 0 auto;
 	}
 }	
+
+/* ---------------------------------------------- /*
+ * Featured Works
+/* ---------------------------------------------- */
+
+#featWorks {
+	 .content-wr {
+		flex-direction: column;
+		text-align: center;
+
+		.workBlocks {
+			flex-wrap: wrap;
+			flex-direction: row;
+			text-align: center;
+			align-items: center;
+			justify-content: space-around;
+			margin: 0 auto;
+			box-sizing: border-box;
+			width: 100%;		
+		}
+	}
+}
+.col {
+	width: calc(33.33% - 1em);
+	margin: 0.5em;
+
+	&:nth-child(1){
+		background: url(../imgs/works_item1.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&:nth-child(2){
+		background: url(../imgs/works_item2.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&:nth-child(3){
+		background: url(../imgs/works_item3.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&:nth-child(4){
+		background: url(../imgs/works_item4.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&:nth-child(5){
+		background: url(../imgs/works_item5.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&:nth-child(6){
+		background: url(../imgs/works_item6.jpg) no-repeat center;
+		background-size: cover;
+	}
+		
+	a {
+		display: block;
+		background: no-repeat center;
+		background-size: cover;
+		min-width: 350px;
+		min-height: 360px;
+		text-decoration: none;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.col {
+		width: calc(50% - 1em);
+	}
+}
+@media screen and (max-width: 600px) {
+	.col {
+		width: calc(100% - 1em);
+	}
+}
