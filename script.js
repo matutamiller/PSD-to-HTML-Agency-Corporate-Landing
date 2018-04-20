@@ -59,3 +59,30 @@
 
     })
 })();
+
+ //Pop ups on click
+(function () {
+    //adding function for opening pop ups
+    var elems = [];
+    [].forEach.call(document.getElementsByClassName('show_popup'), function (item) {
+        elems.push(item);
+    });
+    elems.forEach(function (item) {
+        item.addEventListener('click',function (event) {
+            event.preventDefault('click');
+            this.parentNode.nextElementSibling.classList.add('active');
+        });
+    });
+    elems = [];
+
+   //adding function for closing pop ups
+    [].forEach.call(document.getElementsByClassName('close_popup'), function (item) {
+        elems.push(item);
+    });
+    elems.forEach(function (item) {
+        item.addEventListener('click',function (event) {
+            event.preventDefault('click');
+            this.parentNode.classList.remove('active');
+        });
+    });
+})();

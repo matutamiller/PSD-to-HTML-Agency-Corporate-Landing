@@ -72,7 +72,7 @@ h4 {
 
 p {
   font-family: Raleway, sans-serif;
-  line-height: 1.75em;
+  line-height: 1.5em;
 }
 
 section:not(#head_section) {
@@ -202,7 +202,7 @@ nav div a:hover {
 }
 
 /* ---------------------------------------------- /*
- * Top section
+ * Head section
 /* ---------------------------------------------- */
 #head_section {
   min-height: 100vh;
@@ -438,5 +438,135 @@ nav div a:hover {
 @media screen and (max-width: 600px) {
   .col {
     width: calc(100% - 1em);
+  }
+}
+
+/* ---------------------------------------------- /*
+ * Our Services
+/* ---------------------------------------------- */
+#ourServices {
+  background: #f9fbfb;
+}
+
+#ourServices .servicesGrid {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  box-sizing: border-box;
+  position: relative;
+}
+
+#ourServices .servicesGrid .wide {
+  max-width: 55%;
+  height: 26.375em;
+}
+
+#ourServices .servicesGrid .narrow {
+  max-width: 42%;
+  height: 26.375em;
+}
+
+#ourServices .servicesGrid .serviceItem {
+  margin: 0.5em;
+  position: relative;
+  width: 100%;
+}
+
+#ourServices .servicesGrid .serviceItem:nth-child(1) {
+  background: url(../imgs/overlayer.png), url(../imgs/card1.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#ourServices .servicesGrid .serviceItem:nth-child(2) {
+  background: url(../imgs/overlayer.png), url(../imgs/card2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#ourServices .servicesGrid .serviceItem:nth-child(3) {
+  background: url(../imgs/overlayer.png), url(../imgs/slide4.jpeg) no-repeat center;
+  background-size: cover;
+}
+
+#ourServices .servicesGrid .serviceItem:nth-child(4) {
+  background: url(../imgs/overlayer.png), url(../imgs/slide1.png) no-repeat center;
+  background-size: cover;
+}
+
+#ourServices .servicesGrid .serviceItem:nth-child(5) {
+  background: url(../imgs/overlayer.png), url(../imgs/card3.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#ourServices .servicesGrid .serviceItem:nth-child(6) {
+  background: url(../imgs/overlayer.png), url(../imgs/card4.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#ourServices .servicesGrid .serviceItem .mainInfo {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  color: #ffffff;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  padding: 10em 4.125em 3.125em;
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ourServices .servicesGrid .serviceItem .mainInfo a {
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  font-size: 1.1875em;
+  color: #f7f7f7;
+  text-decoration: none;
+  position: relative;
+}
+
+#ourServices .servicesGrid .serviceItem .hiddenInfo {
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: #71f6eb;
+  color: #132928;
+  padding: 4.125em;
+  z-index: 0;
+  transition: opacity 0.5s ease;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#ourServices .servicesGrid .serviceItem .hiddenInfo.active {
+  opacity: 1;
+  z-index: 50;
+}
+
+#ourServices .servicesGrid .serviceItem .hiddenInfo a {
+  font-size: 3em;
+  color: #132928 !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  #ourServices .servicesGrid .serviceItem {
+    min-width: 100%;
+    margin: 0.5em;
+  }
+  #ourServices .servicesGrid .serviceItem .mainInfo {
+    padding: 2em;
+  }
+  #ourServices .servicesGrid .serviceItem .hiddenInfo {
+    padding: 2em;
+  }
+  #ourServices .servicesGrid .serviceItem .hiddenInfo p {
+    font-size: 1em;
+    line-height: 1em;
   }
 }
