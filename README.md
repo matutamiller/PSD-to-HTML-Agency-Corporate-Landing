@@ -8,3 +8,5 @@ v.1.0 - I have created common document settings, created header and header secti
 v.1.1 - I have created 'About Us' section with slider.
 
 v.1.2 - I have created 'Featured Works' section using rwd margin grid.
+
+v.1.3 - I have created 'Our Services' section with JS controlled pop-ups.
