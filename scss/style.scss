@@ -425,8 +425,8 @@ nav {
 		display: block;
 		background: no-repeat center;
 		background-size: cover;
-		min-width: 350px;
-		min-height: 360px;
+		min-width: 21.875em;
+		min-height: 22.5em;
 		text-decoration: none;
 	}
 }
@@ -564,6 +564,134 @@ nav {
 	#ourServices .servicesGrid .serviceItem .hiddenInfo p{
 		font-size: 1em;
 		line-height: 1em;
+	}
+}
+
+/* ---------------------------------------------- /*
+ * Small Team
+/* ---------------------------------------------- */
+
+.teamGrid {
+	flex-wrap: wrap;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 100%;		
+}
+
+.grid {
+	width: calc(33.33% - 1em);
+	margin: 0.5em;
+	
+	&:nth-child(1){
+		background: url(../imgs/team_1.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&:nth-child(2){
+		background: url(../imgs/team_2.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&:nth-child(3){
+		background: url(../imgs/team_3.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&:nth-child(4){
+		background: url(../imgs/team_4.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&:nth-child(5){
+		background: url(../imgs/team_5.jpg) no-repeat center;
+		background-size: cover;
+	}
+	&:nth-child(6){
+		background: url(../imgs/team_1.jpg) no-repeat center;
+		background-size: cover;
+	}
+		
+	.smallTeam {
+		display: block;
+		background: no-repeat center;
+		background-size: cover;
+		min-height: 27.5em;
+		text-decoration: none;
+		color: #000000;
+		padding-top: 50%;
+		width:100%;
+
+		&:hover .forHover {
+			opacity: 1;
+		}
+		
+		.forHover{
+			opacity: 0;
+			width: 90%;
+			margin: 0 auto;
+			height: 15em;
+			box-shadow: 6px 7px 25px #B8B8B8;
+			text-align: left;
+			padding: 1em 1.5em;
+			background-color: #71f6eb;
+			transition: opacity 1s ease;
+			box-sizing: border-box;
+			
+			
+			.arrow-up {
+				width: 0; 
+				height: 0; 
+				border-left: 10px solid transparent;
+				border-right: 10px solid transparent;
+				border-bottom: 10px solid #71f6eb;
+				transform: translate(60px, -25px);
+			}
+			
+			h3 {
+				margin: 0;
+			}
+			h3 small {
+				color: #767877;
+				font-style: italic;
+				font-size: 0.7em;
+				font-weight: 200;
+				text-transform: none;	
+			}
+			p {
+				margin-top: 10%;
+			}
+			.socials {
+				margin-top: 2em;
+
+				i {
+					margin: 0 0.2em;
+					transition: text-shadow 0.5s ease;
+
+					&:hover {
+						color: #ffffff;
+						text-shadow:#000000 0 0 10px;
+					}
+				}
+			}
+		}
+		
+	} 
+}
+	
+
+
+@media screen and (max-width: 1024px) {
+	.grid {
+	width: calc(50% - 1em);
+	}
+	
+}
+@media screen and (max-width: 600px) {
+	.grid {
+	width: calc(100% - 1em);
+	}
+	.grid .smallTeam {
+		padding-top: 60%;
 	}
 }
 
