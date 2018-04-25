@@ -82,6 +82,15 @@ section:not(#head_section) {
     overflow: hidden;
 }
 
+@keyframes fadeIn {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+  }
+
 /* ---------------------------------------------- /*
  * Header
 /* ---------------------------------------------- */
@@ -283,7 +292,9 @@ nav {
 #aboutUs {
 	background: #f8fafa;
 	min-height: 100vh;
-	
+	&:target {
+		animation: fadeIn 0.6s ease-in-out;
+	}
 	.flex{
 		flex-direction: row;
 		justify-content: space-between;
@@ -376,6 +387,9 @@ nav {
 /* ---------------------------------------------- */
 
 #featWorks {
+	&:target {
+		animation: fadeIn 0.6s ease-in-out;
+	}
 	 .content-wr {
 		flex-direction: column;
 		text-align: center;
@@ -425,7 +439,7 @@ nav {
 		display: block;
 		background: no-repeat center;
 		background-size: cover;
-		min-width: 21.875em;
+		width: 100%;
 		min-height: 22.5em;
 		text-decoration: none;
 	}
@@ -448,7 +462,9 @@ nav {
 
 #ourServices{
 	background: #f9fbfb;
-
+	&:target {
+		animation: fadeIn 0.6s ease-in-out;
+	}
 	.servicesGrid {
 		flex-direction: row;
 		flex-wrap: wrap;
@@ -570,6 +586,9 @@ nav {
 /* ---------------------------------------------- /*
  * Small Team
 /* ---------------------------------------------- */
+#team:target {
+	animation: fadeIn 0.6s ease-in-out;
+}
 
 .teamGrid {
 	flex-wrap: wrap;
@@ -683,8 +702,7 @@ nav {
 @media screen and (max-width: 1024px) {
 	.grid {
 	width: calc(50% - 1em);
-	}
-	
+	}	
 }
 @media screen and (max-width: 600px) {
 	.grid {
@@ -694,4 +712,7 @@ nav {
 		padding-top: 60%;
 	}
 }
+
+
+
 

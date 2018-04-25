@@ -81,6 +81,15 @@ section:not(#head_section) {
   overflow: hidden;
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* ---------------------------------------------- /*
  * Header
 /* ---------------------------------------------- */
@@ -276,6 +285,10 @@ nav div a:hover {
   min-height: 100vh;
 }
 
+#aboutUs:target {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
 #aboutUs .flex {
   flex-direction: row;
   justify-content: space-between;
@@ -369,6 +382,10 @@ nav div a:hover {
 /* ---------------------------------------------- /*
  * Featured Works
 /* ---------------------------------------------- */
+#featWorks:target {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
 #featWorks .content-wr {
   flex-direction: column;
   text-align: center;
@@ -424,7 +441,7 @@ nav div a:hover {
   display: block;
   background: no-repeat center;
   background-size: cover;
-  min-width: 21.875em;
+  width: 100%;
   min-height: 22.5em;
   text-decoration: none;
 }
@@ -446,6 +463,10 @@ nav div a:hover {
 /* ---------------------------------------------- */
 #ourServices {
   background: #f9fbfb;
+}
+
+#ourServices:target {
+  animation: fadeIn 0.6s ease-in-out;
 }
 
 #ourServices .servicesGrid {
@@ -574,6 +595,10 @@ nav div a:hover {
 /* ---------------------------------------------- /*
  * Small Team
 /* ---------------------------------------------- */
+#team:target {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
 .teamGrid {
   flex-wrap: wrap;
   flex-direction: row;
