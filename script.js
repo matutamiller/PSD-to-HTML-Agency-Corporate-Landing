@@ -56,7 +56,6 @@
             item.getElementsByClassName('sliderNav')[0].appendChild(newElem);
         }
         document.querySelector('.sliderNav li').className = 'active';
-
     })
 })();
 
@@ -85,4 +84,58 @@
             this.parentNode.classList.remove('active');
         });
     });
+})();
+
+//Comments Picture Slider
+(function () {
+
+    var elem = document.createElement('li');
+    elem.innerHTML = '';
+    var sliders = [];
+    [].forEach.call(document.getElementsByClassName('sliderPic'),function (item) {
+        sliders.push(item);
+    });
+    sliders.forEach(function (item) {
+        var count = item.getElementsByClassName('sliderPicItems')[0].getElementsByTagName('li').length;
+        for(var i = 1; i <= count; i++){
+            var newElem = elem.cloneNode(true);
+            newElem.setAttribute('index', i + '');
+            newElem.onclick = function () {
+                var index = this.getAttribute('index');
+                document.querySelector('.sliderPicItems .active').removeAttribute('class');
+                document.querySelector('.sliderPicItems li:nth-child('+index+')').className = 'active';
+                document.querySelector('.sliderPicNav .active').removeAttribute('class');
+                this.className = 'active';
+            };
+            item.getElementsByClassName('sliderPicNav')[0].appendChild(newElem);
+        }
+        document.querySelector('.sliderPicNav li').className = 'active';
+    })
+})();
+
+//Comments Text Slider
+(function () {
+
+    var elem = document.createElement('li');
+    elem.innerHTML = '';
+    var sliders = [];
+    [].forEach.call(document.getElementsByClassName('sliderText'),function (item) {
+        sliders.push(item);
+    });
+    sliders.forEach(function (item) {
+        var count = item.getElementsByClassName('sliderTextItems')[0].getElementsByTagName('li').length;
+        for(var i = 1; i <= count; i++){
+            var newElem = elem.cloneNode(true);
+            newElem.setAttribute('index', i + '');
+            newElem.onclick = function () {
+                var index = this.getAttribute('index');
+                document.querySelector('.sliderTextItems .active').removeAttribute('class');
+                document.querySelector('.sliderTextItems li:nth-child('+index+')').className = 'active';
+                document.querySelector('.sliderTextNav .active').removeAttribute('class');
+                this.className = 'active';
+            };
+            item.getElementsByClassName('sliderTextNav')[0].appendChild(newElem);
+        }
+        document.querySelector('.sliderTextNav li').className = 'active';
+    })
 })();
