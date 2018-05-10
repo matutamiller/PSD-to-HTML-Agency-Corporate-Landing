@@ -914,6 +914,7 @@ nav {
 			height: 3.9375em;
 			margin-right: 5.26315789473684%;
 			filter: grayscale(100%) contrast(0%);
+			transition: filter 0.5s ease;
 
 		
 			&:nth-child(1){
