@@ -17,5 +17,5 @@ v.1.4 - I have created 'Small Team' section using rwd margin grid.
 v.1.5 - I have created 'What They Say' section with sliders for images and comments. Changed some styles of the navbar and added some media queries for rwd.
 
 v.1.6 - I have created 'Partners' section.
-        
-        
+
+v.1.7 - I have created 'Contacts' section.        
