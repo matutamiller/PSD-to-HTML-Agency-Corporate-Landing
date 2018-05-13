@@ -1009,3 +1009,106 @@ nav div a:hover {
     margin-top: 2.75em;
   }
 }
+
+/* ---------------------------------------------- /*
+ * Contacts Section
+/* ---------------------------------------------- */
+#contacts {
+  min-height: 44.0625em;
+  background-image: url(../imgs/contacts_bg.jpg);
+  max-width: 100%;
+  position: relative;
+}
+
+#contacts:target {
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+#contacts .content-wr {
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: left;
+  margin-top: 7.5625em;
+}
+
+#contacts .content-wr .feedback {
+  background-color: rgba(2, 22, 35, 0.71);
+  max-width: 53.7719298245614%;
+  height: 28.8125em;
+  top: 0;
+  padding: 1.9375em;
+}
+
+#contacts .content-wr .feedback input, #contacts .content-wr .feedback textarea {
+  border: none;
+  border-bottom: 2px solid #616e77;
+  width: 98.24561403508772%;
+  height: 3.75em;
+  text-transform: capitalize;
+  background-color: transparent;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#contacts .content-wr .feedback textarea {
+  height: 8.4375em;
+  box-sizing: border-box;
+  padding: 3.5% 0 5.125em 0;
+  overflow: hidden;
+  line-height: 1;
+}
+
+#contacts .content-wr .feedback input[type=button] {
+  width: 15.3125em;
+  height: 3.3125em;
+  background-color: #6eeee4;
+  text-align: center;
+  margin-top: 2.25em;
+  text-transform: uppercase;
+  color: #214744;
+  border-bottom: none;
+  border: 1px solid  #6eeee4;
+  border-radius: 3px;
+}
+
+#contacts .content-wr .location {
+  background-color: rgba(2, 22, 35, 0.71);
+  min-width: 43.85964912280702%;
+  height: 28.8125em;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#contacts .content-wr .adress {
+  width: 15.25em;
+  height: 9.9375em;
+  padding: 0 0 0 2.5em;
+}
+
+#contacts .content-wr .adress p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 15px;
+  font-weight: 400;
+}
+
+#contacts .content-wr #map {
+  width: 91%;
+  height: 14em;
+  max-width: 100%;
+  margin-left: 4.4%;
+  padding: 1.875em;
+}
+
+@media screen and (max-width: 850px) {
+  .feedback {
+    min-width: 100%;
+    margin-bottom: 3%;
+  }
+  .location {
+    width: 100%;
+    margin-bottom: 3%;
+  }
+}

@@ -28,7 +28,7 @@
 						<a href="#ourServices">Our services</a>
 						<a href="#team">Team</a>
 						<a href="#comments">Comments</a>
-						<a href="#">Contact</a>
+						<a href="#contacts">Contacts</a>
 					</div>
 				</nav>
 			</div>	
@@ -447,10 +447,37 @@
 				<a href="#"></a>
 			</div>
 		</div>
+	</section>
 
+	<!--Contacts Section-->
+
+	<section id="contacts">
+		<div class="content-wr flex">
+			<div class="feedback">
+				<input type="text" required placeholder="name*">
+				<input type="text" required placeholder="subject*">
+				<input type="email" required placeholder="e-mail*">
+				<textarea  required placeholder="message*"></textarea>
+				<input type="button" value="send message">
+			</div>
+			<div class="location flex">
+				<div class="adress">
+					<p>Adress line 1 
+						Adress line 2 
+						Phone: +548 945645
+						Fax: +456456 54546
+					</p>
+					<p>Web: www.designagency.net
+					   E-mail: info@designagency.net</p>	
+					
+				</div>
+				<div id="map"></div>
+			</div>
+		</div>
 	</section>
 
 <script src="script.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
 
 
 </body>
