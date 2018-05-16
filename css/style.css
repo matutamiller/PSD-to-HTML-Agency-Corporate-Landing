@@ -878,8 +878,18 @@ nav div a:hover {
   margin-top: 0.5em;
 }
 
+#comments .flex .sliderText .sliderTextNav li:first-child {
+  background: url(../imgs/left.png) center no-repeat;
+  background-color: #ffffff;
+}
+
+#comments .flex .sliderText .sliderTextNav li:last-child {
+  background: url(../imgs/right.png) center no-repeat;
+  background-color: #ffffff;
+}
+
 #comments .flex .sliderText .sliderTextNav li.active {
-  background: #71f6eb;
+  background-color: #71f6eb;
 }
 
 @media only screen and (min-width: 830px) {
@@ -1072,6 +1082,13 @@ nav div a:hover {
   border-bottom: none;
   border: 1px solid  #6eeee4;
   border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+#contacts .content-wr .feedback input[type=button]:hover {
+  background-color: #424648;
+  color: #6eeee4;
+  border: 1px solid  #424648;
 }
 
 #contacts .content-wr .location {
@@ -1111,4 +1128,79 @@ nav div a:hover {
     width: 100%;
     margin-bottom: 3%;
   }
+}
+
+/* ---------------------------------------------- /*
+ * Footer
+/* ---------------------------------------------- */
+footer {
+  width: 100%;
+  background-color: #262b2e;
+  min-height: 19.5em;
+}
+
+footer .followUs {
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .followUs ul {
+  padding: 0;
+  margin: 0;
+}
+
+footer .followUs ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+  text-decoration: none;
+  width: 2.875em;
+  height: 2.5em;
+}
+
+footer .followUs ul li:last-child {
+  margin-right: 0;
+}
+
+footer .followUs ul li a, footer .followUs ul li i {
+  background-color: #424648;
+  text-decoration: none;
+  width: 2.875em;
+  height: 2.5em;
+  display: block;
+  transition: background-color 0.5s ease-in;
+}
+
+footer .followUs ul li a:hover, footer .followUs ul li i:hover {
+  background-color: #6eeee4;
+}
+
+footer .followUs ul li .i-pinterest {
+  background: url(../imgs/pinterest.png) center;
+}
+
+footer .followUs ul li .i-twitter {
+  background: url(../imgs/mtwit.png) center;
+}
+
+footer .followUs ul li .i-facebook {
+  background: url(../imgs/facebook.png) center;
+}
+
+footer .followUs ul li .i-ball {
+  background: url(../imgs/ball.png) center;
+}
+
+footer .followUs p {
+  margin: 0 auto;
+  padding-top: 2.6875em;
+  text-transform: capitalize;
+  display: block;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+footer .followUs p:first-child {
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  padding-bottom: 1.1875em;
 }

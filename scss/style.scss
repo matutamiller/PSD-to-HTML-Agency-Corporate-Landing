@@ -855,8 +855,16 @@ nav {
 				border-radius: 0.125em;
 				margin-top: 0.5em;
 				
+				&:first-child {
+					background: url(../imgs/left.png)center no-repeat;
+					background-color: #ffffff;
+				}
+				&:last-child {
+					background: url(../imgs/right.png)center no-repeat;
+					background-color: #ffffff;
+				}
 				&.active{
-					background: #71f6eb;
+					background-color: #71f6eb;
 				}
 			}							
 		}
@@ -1037,6 +1045,13 @@ nav {
 				border-bottom: none;
 				border: 1px solid  #6eeee4;
 				border-radius: 3px;
+				transition: all 0.3s ease;
+
+				&:hover {
+					background-color: #424648;
+					color: #6eeee4;
+					border: 1px solid  #424648;
+				}
 			}
 		}
 
@@ -1055,7 +1070,7 @@ nav {
 			p {
 				color: rgba(255, 255, 255, 0.7);
 				font-size: 15px;
-				font-weight: 400;	
+				font-weight: 400;
 			}
 		}
 		#map {
@@ -1075,5 +1090,78 @@ nav {
 	.location {
 		width: 100%;
 		margin-bottom: 3%;
+	}
+}
+
+/* ---------------------------------------------- /*
+ * Footer
+/* ---------------------------------------------- */
+
+footer {
+    width: 100%;
+    background-color: #262b2e;
+	min-height: 19.5em;
+	
+	.followUs {
+		margin: 0 auto;
+		text-align: center;
+
+		ul {
+		padding: 0;
+		margin: 0;
+		
+			li {
+				list-style-type: none;
+				display: inline-block;
+				margin-right: 20px;
+				text-decoration: none;
+				width:  2.875em;
+				height: 2.5em;
+
+				&:last-child {
+					margin-right: 0;
+				}
+
+				a, i {	
+				background-color: #424648;
+				text-decoration: none;
+				width:  2.875em;
+				height: 2.5em;
+				display: block;
+				transition: background-color 0.5s ease-in;
+
+					&:hover {
+						background-color: #6eeee4;
+					}
+				}
+				
+				.i-pinterest {
+					background: url(../imgs/pinterest.png)center;
+				}
+				.i-twitter {
+					background: url(../imgs/mtwit.png)center;
+				}
+				.i-facebook {
+					background: url(../imgs/facebook.png)center;
+				}
+				.i-ball {
+					background: url(../imgs/ball.png)center;
+				}		
+			}
+		}
+
+		p {
+			margin: 0 auto;
+			padding-top: 2.6875em;
+			text-transform: capitalize;
+			display: block;
+			color: rgba(255, 255, 255, 0.4);
+			
+			&:first-child {
+				text-transform: uppercase;
+				color: rgba(255, 255, 255, 0.8);
+				padding-bottom:  1.1875em;
+			}
+		}
 	}
 }
