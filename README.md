@@ -20,4 +20,4 @@ v.1.6 - I have created 'Partners' section.
 
 v.1.7 - I have created 'Contacts' section.    
 
-v.1.7 - I have added footer.
+v.1.8 - I have added footer.
