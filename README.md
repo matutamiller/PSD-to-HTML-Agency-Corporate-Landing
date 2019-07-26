@@ -1,7 +1,7 @@
 # PSD-to-HTML-Agency-Corporate-Landing
 Landing created using html5, scss, JavaScript, css3 flexboxes, responsive web design
 
-<a href="https://matutamiller.github.io/PSD-to-HTML-Agency-Corporate-Landing/">See online</a>
+<a href="https://matutamiller.github.io/PSD-to-HTML-Agency-Corporate-Landing/">See Online</a>
 
 v.1.0 - I have created common document settings, created header and header section, created rwd navigation and sticky header with JS.
 
